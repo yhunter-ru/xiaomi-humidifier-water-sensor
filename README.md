@@ -11,9 +11,9 @@
 7. Download driver for CH340 if your arduino is Chinese. Install. https://github.com/DecaturMakers/CH340_drivers-Linux-Mac-Windows
 8. Download the firmware sketch from the github: https://github.com/yhunter-ru/xiaomi-humidifier-water-sensor
 9. Open up the sketch in the Arduino IDE.
-10. Connect Arduino to your computer. See in the IDE that a new virtual COM port has appeared in the "Tools -> Port" menu. (If it does not appear, then the CH340 driver is not installed correctly).
-11. Choose: "Tools -> Board -> Arduino Nano". "Tools -> Processor -> ATmega328P" (maybe Old Bootloader, you may not have an old one - try it in turn).
-12. Choose: "Tools -> Manage Libraries". In the search, enter "CapacitiveSensor". Press "Install".
+10. Connect Arduino to your computer. See in the IDE that a new virtual COM port has appeared in the `Tools -> Port` menu. (If it does not appear, then the CH340 driver is not installed correctly).
+11. Choose: `Tools -> Board -> Arduino Nano`. `Tools -> Processor -> ATmega328P` (maybe Old Bootloader, maybe new - try it in turn).
+12. Choose: `Tools -> Manage Libraries`. In the search, enter "CapacitiveSensor". Press "Install".
 13. Click the button with the arrow "Download". The board is ready. Can be connected to a humidifier.
 14. Solder a 1 MegaOhm resistor between the D2 and D3 pins of the Arduino. Solder the rest of the leads according to the scheme.
 
@@ -29,7 +29,7 @@
 4. Line 49 `Serial.write (packet, sizeof (packet));` - comment with two slashes // at the start.
 5. Line 50 `Serial.println (readingRaw);` - uncomment at the start.
 6. Upload the firmware into Arduino.
-7. In Arduino IDE: "Tools -> Port Monitor". Write down average values of the dry sensor.
+7. In Arduino IDE: `Tools -> Port Monitor`. Write down average values of the dry sensor.
 8. Fill the water tank to the maximum and write down new values.
 9. Enter the values of the min and max to lines 9 `MIN_READING` and 10 `MAX_READING`, respectively.
 10. Line 49 `Serial.write (packet, sizeof (packet));` - uncomment back.
