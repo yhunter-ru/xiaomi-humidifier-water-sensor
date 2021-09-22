@@ -8,8 +8,8 @@
 4. Solder the blue module carefully so as not to damage the tracks of the power supply board.
 5. Throw the blue module in the trash)
 6. Download Arduino IDE. Install. https://www.arduino.cc/en/software
-7. Download driver for CH340 if your arduino is Chinese. Install. https://iarduino.ru/file/230.html
-8. Download the firmware sketch from the github: https://github.com/fak...umidifier-water-sensor
+7. Download driver for CH340 if your arduino is Chinese. Install. https://github.com/DecaturMakers/CH340_drivers-Linux-Mac-Windows
+8. Download the firmware sketch from the github: https://github.com/yhunter-ru/xiaomi-humidifier-water-sensor
 9. Open up the sketch in the Arduino IDE.
 10. Connect Arduino to your computer. See in the IDE that a new virtual COM port has appeared in the "Tools -> Port" menu. (If it does not appear, then the CH340 driver is not installed correctly).
 11. Choose: "Tools -> Board -> Arduino Nano". "Tools -> Processor -> ATmega328P" (maybe Old Bootloader, you may not have an old one - try it in turn).
